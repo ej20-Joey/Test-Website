@@ -19,7 +19,7 @@ b2b-demo/
 ├── css/
 │   └── styles.css          # All styles — single stylesheet
 ├── js/
-│   └── (new scripts go here)
+│   └── catalogue.js        # Catalogue page interactivity (qty stepper, add to order)
 ├── pages/
 │   ├── catalogue.html      # Product catalogue with grid + filters
 │   ├── orders.html         # Order history table
@@ -47,10 +47,12 @@ Key variables:
 These components already exist in `css/styles.css` — use them, don't reinvent:
 
 - `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-ghost`, `.btn-sm`, `.btn-lg`
+- `.btn-fav` — absolute-positioned favourite button; place as a direct child of `.product-card` (not inside `.product-card-footer`); sits top-right over the product image
 - `.label`, `.label-success`, `.label-warning`, `.label-danger`, `.label-info`, `.label-neutral`
 - `.card`, `.card-body`, `.card-footer`
 - `.product-card`, `.product-card-image`, `.product-card-body`, `.product-card-footer`
 - `.product-grid` — CSS grid, auto-fill columns at 260px min
+- `.qty-stepper` — quantity stepper; contains `.qty-stepper__btn` (×2, with `data-action="minus"/"plus"`) and `.qty-stepper__input` (number input); disable all three elements for unavailable products
 - `.stat-card`, `.stats-row` — 4-column grid of KPI cards
 - `.table-wrap`, `table`, `th`, `td`, `.td-sku`
 - `.nav`, `.nav-inner`, `.nav-logo`, `.nav-links`, `.nav-cart`
@@ -81,6 +83,12 @@ These components already exist in `css/styles.css` — use them, don't reinvent:
 - Do not hardcode colors or spacing — always reference CSS variables
 - Do not modify the nav or footer structure — extend only
 - Do not use inline styles for anything covered by the design system
+
+## Git and GitHub
+- Remote: `https://github.com/ej20-Joey/Test-Website.git`
+- Default branch: `main`
+- All changes must be made on a feature branch — never commit directly to `main`
+- Merge to `main` via pull request
 
 ## Enhancement instructions
 When adding a new enhancement:
