@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue — TradeCore</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html" style="color:inherit">Trade<span>Core</span></a></div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="catalogue.html" class="active">Catalogue</a>
+      <a href="orders.html">Orders</a>
+      <a href="account.html">Account</a>
+    </div>
+    <div class="nav-actions">
+      <span style="font-size:13px;color:rgba(255,255,255,0.6)">Acme Hardware Co.</span>
+      <div class="nav-cart">🛒<span class="nav-cart-badge">3</span></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-breadcrumb">
+      <a href="index.html">Dashboard</a> / <span>Catalogue</span>
+    </div>
+    <h1>Product Catalogue</h1>
+    <p>Browse and order from our full wholesale range</p>
+  </div>
+</div>
+
+<div class="container page-content">
+  <div class="layout-sidebar">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">CATEGORIES</div>
+        <a class="sidebar-link active">All Products</a>
+        <a class="sidebar-link">Fasteners & Fixings</a>
+        <a class="sidebar-link">Power Tools</a>
+        <a class="sidebar-link">Hand Tools</a>
+        <a class="sidebar-link">Safety Equipment</a>
+        <a class="sidebar-link">Electrical</a>
+        <a class="sidebar-link">Plumbing</a>
+        <a class="sidebar-link">Packaging</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">AVAILABILITY</div>
+        <a class="sidebar-link">In Stock Only</a>
+        <a class="sidebar-link">Include Backorders</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">BRAND</div>
+        <a class="sidebar-link">Stanley</a>
+        <a class="sidebar-link">Bosch</a>
+        <a class="sidebar-link">Makita</a>
+        <a class="sidebar-link">3M</a>
+        <a class="sidebar-link">DeWalt</a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+      <div class="search-bar">
+        <div class="search-input-wrap">
+          <input type="text" placeholder="Search products or SKUs…">
+        </div>
+        <select>
+          <option>Sort: Relevance</option>
+          <option>Price: Low–High</option>
+          <option>Price: High–Low</option>
+          <option>Newest</option>
+        </select>
+      </div>
+
+      <p style="font-size:13px;color:var(--color-text-muted);margin-bottom:20px">Showing 8 of 1,240 products</p>
+
+      <div class="product-grid">
+
+        <!-- Product 1 — In Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">🔩</div>
+          <div class="product-card-labels">
+            <span class="label label-success">In Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-00421</div>
+            <div class="product-card-name">M8 Hex Bolt Zinc Plated — Box 100</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$18.50</div>
+              <div class="product-card-moq">MOQ: 5 boxes</div>
+            </div>
+            <span class="label label-neutral">842 units available</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 2 — Low Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">🪛</div>
+          <div class="product-card-labels">
+            <span class="label label-warning">Low Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-00887</div>
+            <div class="product-card-name">Phillips Head Screwdriver Set — 6pc</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$42.00</div>
+              <div class="product-card-moq">MOQ: 1 set</div>
+            </div>
+            <span class="label label-warning">12 units left</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 3 — Out of Stock -->
+        <div class="card product-card">
+          <div class="product-card-image" style="opacity:0.5">🔧</div>
+          <div class="product-card-labels">
+            <span class="label label-danger">Out of Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-01102</div>
+            <div class="product-card-name">Adjustable Wrench 300mm — Heavy Duty</div>
+            <div class="product-card-meta">
+              <div class="product-card-price" style="color:var(--color-text-muted)">$29.95</div>
+              <div class="product-card-moq">MOQ: 10 units</div>
+            </div>
+            <span class="label label-neutral">Next stock TBC</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-secondary" style="flex:1" disabled>Unavailable</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 4 — In Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">⛑️</div>
+          <div class="product-card-labels">
+            <span class="label label-success">In Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-02210</div>
+            <div class="product-card-name">Hard Hat Class E — White, Vented</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$14.80</div>
+              <div class="product-card-moq">MOQ: 10 units</div>
+            </div>
+            <span class="label label-neutral">320 units available</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 5 — In Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">🔋</div>
+          <div class="product-card-labels">
+            <span class="label label-success">In Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-03341</div>
+            <div class="product-card-name">Alkaline AA Battery — Carton of 144</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$68.00</div>
+              <div class="product-card-moq">MOQ: 1 carton</div>
+            </div>
+            <span class="label label-neutral">200 cartons available</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 6 — Low Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">🪚</div>
+          <div class="product-card-labels">
+            <span class="label label-warning">Low Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-04455</div>
+            <div class="product-card-name">Circular Saw Blade 185mm — 24T</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$22.40</div>
+              <div class="product-card-moq">MOQ: 5 units</div>
+            </div>
+            <span class="label label-warning">8 units left</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 7 — In Stock -->
+        <div class="card product-card">
+          <div class="product-card-image">📦</div>
+          <div class="product-card-labels">
+            <span class="label label-success">In Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-05500</div>
+            <div class="product-card-name">Cardboard Box 400x300x200mm — Pack 25</div>
+            <div class="product-card-meta">
+              <div class="product-card-price">$31.00</div>
+              <div class="product-card-moq">MOQ: 2 packs</div>
+            </div>
+            <span class="label label-neutral">512 packs available</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-primary" style="flex:1">Add to Order</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+        <!-- Product 8 — Out of Stock -->
+        <div class="card product-card">
+          <div class="product-card-image" style="opacity:0.5">🌡️</div>
+          <div class="product-card-labels">
+            <span class="label label-danger">Out of Stock</span>
+          </div>
+          <div class="product-card-body">
+            <div class="product-card-sku">SKU-06612</div>
+            <div class="product-card-name">Digital Infrared Thermometer — Industrial</div>
+            <div class="product-card-meta">
+              <div class="product-card-price" style="color:var(--color-text-muted)">$54.00</div>
+              <div class="product-card-moq">MOQ: 2 units</div>
+            </div>
+            <span class="label label-neutral">Due back: July 2026</span>
+          </div>
+          <div class="product-card-footer">
+            <button class="btn btn-secondary" style="flex:1" disabled>Unavailable</button>
+            <button class="btn btn-ghost btn-sm">♡</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Trade<span>Core</span></div>
+    <div>© 2026 TradeCore Distribution. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

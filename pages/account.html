@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account — TradeCore</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html" style="color:inherit">Trade<span>Core</span></a></div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="orders.html">Orders</a>
+      <a href="account.html" class="active">Account</a>
+    </div>
+    <div class="nav-actions">
+      <span style="font-size:13px;color:rgba(255,255,255,0.6)">Acme Hardware Co.</span>
+      <div class="nav-cart">🛒<span class="nav-cart-badge">3</span></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-breadcrumb">
+      <a href="index.html">Dashboard</a> / <span>Account</span>
+    </div>
+    <h1>Account Settings</h1>
+    <p>Manage your company profile, users and preferences</p>
+  </div>
+</div>
+
+<div class="container page-content">
+  <div class="layout-sidebar">
+
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">ACCOUNT</div>
+        <a class="sidebar-link active">Company Profile</a>
+        <a class="sidebar-link">Delivery Addresses</a>
+        <a class="sidebar-link">Payment & Credit</a>
+        <a class="sidebar-link">Users & Permissions</a>
+        <a class="sidebar-link">Notifications</a>
+        <a class="sidebar-link">Order Templates</a>
+      </div>
+    </aside>
+
+    <main>
+
+      <!-- COMPANY INFO -->
+      <div class="card mb-6">
+        <div class="card-body">
+          <h2 class="section-title">Company Profile</h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:var(--color-text-muted);margin-bottom:6px">COMPANY NAME</label>
+              <input type="text" value="Acme Hardware Co." style="width:100%;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-body);font-size:14px;outline:none;">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:var(--color-text-muted);margin-bottom:6px">ABN</label>
+              <input type="text" value="51 824 753 556" style="width:100%;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:14px;outline:none;">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:var(--color-text-muted);margin-bottom:6px">CONTACT EMAIL</label>
+              <input type="email" value="orders@acmehardware.com.au" style="width:100%;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-body);font-size:14px;outline:none;">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:var(--color-text-muted);margin-bottom:6px">PHONE</label>
+              <input type="tel" value="+61 2 9988 7766" style="width:100%;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-body);font-size:14px;outline:none;">
+            </div>
+          </div>
+        </div>
+        <div class="card-footer" style="display:flex;justify-content:flex-end">
+          <button class="btn btn-primary btn-sm">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- CREDIT -->
+      <div class="card mb-6">
+        <div class="card-body">
+          <h2 class="section-title">Credit Account</h2>
+          <div class="stats-row" style="margin-bottom:0;grid-template-columns:repeat(3,1fr)">
+            <div class="stat-card">
+              <div class="stat-label">CREDIT LIMIT</div>
+              <div class="stat-value">$40,000</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">AVAILABLE</div>
+              <div class="stat-value" style="color:var(--color-success)">$15,200</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">CURRENT BALANCE</div>
+              <div class="stat-value">$24,800</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- USERS -->
+      <div class="card">
+        <div class="card-body" style="padding-bottom:0">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+            <h2 class="section-title" style="margin:0">Users</h2>
+            <button class="btn btn-secondary btn-sm">+ Add User</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>ROLE</th>
+                <th>LAST LOGIN</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>James Thornton</strong></td>
+                <td style="color:var(--color-text-muted);font-size:13px">j.thornton@acmehardware.com.au</td>
+                <td><span class="label label-info">Admin</span></td>
+                <td style="font-size:13px;color:var(--color-text-muted)">Today</td>
+                <td><button class="btn btn-ghost btn-sm">Edit</button></td>
+              </tr>
+              <tr>
+                <td><strong>Karen Lee</strong></td>
+                <td style="color:var(--color-text-muted);font-size:13px">k.lee@acmehardware.com.au</td>
+                <td><span class="label label-neutral">Buyer</span></td>
+                <td style="font-size:13px;color:var(--color-text-muted)">1 Jun 2026</td>
+                <td><button class="btn btn-ghost btn-sm">Edit</button></td>
+              </tr>
+              <tr>
+                <td><strong>Mark Davies</strong></td>
+                <td style="color:var(--color-text-muted);font-size:13px">m.davies@acmehardware.com.au</td>
+                <td><span class="label label-neutral">Viewer</span></td>
+                <td style="font-size:13px;color:var(--color-text-muted)">28 May 2026</td>
+                <td><button class="btn btn-ghost btn-sm">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Trade<span>Core</span></div>
+    <div>© 2026 TradeCore Distribution. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders — TradeCore</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="index.html" style="color:inherit">Trade<span>Core</span></a></div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="orders.html" class="active">Orders</a>
+      <a href="account.html">Account</a>
+    </div>
+    <div class="nav-actions">
+      <span style="font-size:13px;color:rgba(255,255,255,0.6)">Acme Hardware Co.</span>
+      <div class="nav-cart">🛒<span class="nav-cart-badge">3</span></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-breadcrumb">
+      <a href="index.html">Dashboard</a> / <span>Orders</span>
+    </div>
+    <h1>Order History</h1>
+    <p>Track and manage all your TradeCore orders</p>
+  </div>
+</div>
+
+<div class="container page-content">
+
+  <div class="search-bar mb-6">
+    <div class="search-input-wrap">
+      <input type="text" placeholder="Search by order number or product…">
+    </div>
+    <select>
+      <option>All Statuses</option>
+      <option>Processing</option>
+      <option>Dispatched</option>
+      <option>Delivered</option>
+      <option>On Backorder</option>
+    </select>
+    <select>
+      <option>Last 30 days</option>
+      <option>Last 90 days</option>
+      <option>This year</option>
+      <option>All time</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ORDER NUMBER</th>
+            <th>DATE PLACED</th>
+            <th>ITEMS</th>
+            <th>TOTAL (AUD)</th>
+            <th>STATUS</th>
+            <th>ETA</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-sku">#TC-009182</td>
+            <td>2 Jun 2026</td>
+            <td>14 items</td>
+            <td><strong>$3,420.00</strong></td>
+            <td><span class="label label-info">Processing</span></td>
+            <td style="color:var(--color-text-muted);font-size:13px">5–7 Jun</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-009105</td>
+            <td>28 May 2026</td>
+            <td>6 items</td>
+            <td><strong>$890.50</strong></td>
+            <td><span class="label label-success">Dispatched</span></td>
+            <td style="color:var(--color-text-muted);font-size:13px">3–4 Jun</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008977</td>
+            <td>22 May 2026</td>
+            <td>22 items</td>
+            <td><strong>$7,100.00</strong></td>
+            <td><span class="label label-success">Delivered</span></td>
+            <td style="color:var(--color-text-muted);font-size:13px">Delivered 27 May</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008811</td>
+            <td>14 May 2026</td>
+            <td>3 items</td>
+            <td><strong>$215.00</strong></td>
+            <td><span class="label label-warning">On Backorder</span></td>
+            <td style="color:var(--color-warning);font-size:13px;font-weight:500">Est. 18 Jun</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008640</td>
+            <td>6 May 2026</td>
+            <td>8 items</td>
+            <td><strong>$1,860.00</strong></td>
+            <td><span class="label label-success">Delivered</span></td>
+            <td style="color:var(--color-text-muted);font-size:13px">Delivered 12 May</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008502</td>
+            <td>28 Apr 2026</td>
+            <td>31 items</td>
+            <td><strong>$9,340.00</strong></td>
+            <td><span class="label label-success">Delivered</span></td>
+            <td style="color:var(--color-text-muted);font-size:13px">Delivered 3 May</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008301</td>
+            <td>18 Apr 2026</td>
+            <td>5 items</td>
+            <td><strong>$445.00</strong></td>
+            <td><span class="label label-warning">On Backorder</span></td>
+            <td style="color:var(--color-warning);font-size:13px;font-weight:500">Est. 30 Jun</td>
+            <td><button class="btn btn-ghost btn-sm">View →</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Trade<span>Core</span></div>
+    <div>© 2026 TradeCore Distribution. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

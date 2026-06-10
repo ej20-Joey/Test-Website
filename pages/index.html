@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeCore — Wholesale Distribution Portal</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Trade<span>Core</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="orders.html">Orders</a>
+      <a href="account.html">Account</a>
+    </div>
+    <div class="nav-actions">
+      <span style="font-size:13px;color:rgba(255,255,255,0.6)">Acme Hardware Co.</span>
+      <div class="nav-cart">
+        🛒
+        <span class="nav-cart-badge">3</span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <p style="color:rgba(255,255,255,0.6);font-size:14px;margin-bottom:8px">Good morning, James</p>
+    <h1>Dashboard</h1>
+    <p>Welcome back to your TradeCore portal — Acme Hardware Co.</p>
+  </div>
+</div>
+
+<div class="container page-content">
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">OPEN ORDERS</div>
+      <div class="stat-value">12</div>
+      <div class="stat-sub">3 dispatched today</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">MTD SPEND</div>
+      <div class="stat-value">$24,830</div>
+      <div class="stat-sub">↑ 8% vs last month</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">CREDIT AVAILABLE</div>
+      <div class="stat-value">$15,200</div>
+      <div class="stat-sub">of $40,000 limit</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">ITEMS IN CART</div>
+      <div class="stat-value">3</div>
+      <div class="stat-sub">Est. total $1,240</div>
+    </div>
+  </div>
+
+  <!-- RECENT ORDERS -->
+  <div class="card mb-8">
+    <div class="card-body" style="padding-bottom:0">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <h2 class="section-title" style="margin:0">Recent Orders</h2>
+        <a href="orders.html" class="btn btn-ghost btn-sm">View all →</a>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ORDER</th>
+            <th>DATE</th>
+            <th>ITEMS</th>
+            <th>TOTAL</th>
+            <th>STATUS</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-sku">#TC-009182</td>
+            <td>2 Jun 2026</td>
+            <td>14 items</td>
+            <td><strong>$3,420.00</strong></td>
+            <td><span class="label label-info">Processing</span></td>
+            <td><a href="orders.html" class="btn btn-ghost btn-sm">View</a></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-009105</td>
+            <td>28 May 2026</td>
+            <td>6 items</td>
+            <td><strong>$890.50</strong></td>
+            <td><span class="label label-success">Dispatched</span></td>
+            <td><a href="orders.html" class="btn btn-ghost btn-sm">View</a></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008977</td>
+            <td>22 May 2026</td>
+            <td>22 items</td>
+            <td><strong>$7,100.00</strong></td>
+            <td><span class="label label-success">Delivered</span></td>
+            <td><a href="orders.html" class="btn btn-ghost btn-sm">View</a></td>
+          </tr>
+          <tr>
+            <td class="td-sku">#TC-008811</td>
+            <td>14 May 2026</td>
+            <td>3 items</td>
+            <td><strong>$215.00</strong></td>
+            <td><span class="label label-warning">On Backorder</span></td>
+            <td><a href="orders.html" class="btn btn-ghost btn-sm">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- QUICK ORDER + FEATURED -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="section-title">Quick Order</h2>
+        <p style="font-size:14px;color:var(--color-text-muted);margin-bottom:20px">Enter a SKU to add directly to your cart</p>
+        <div style="display:flex;gap:8px">
+          <input type="text" placeholder="e.g. SKU-00421" style="flex:1;padding:10px 14px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:13px;outline:none;">
+          <button class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="section-title">Your Rep</h2>
+        <div style="display:flex;gap:16px;align-items:center">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--color-subtle);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">👤</div>
+          <div>
+            <div style="font-weight:600;margin-bottom:2px">Sarah Mitchell</div>
+            <div style="font-size:13px;color:var(--color-text-muted);margin-bottom:8px">Account Manager — ANZ</div>
+            <a href="mailto:s.mitchell@tradecore.com" class="btn btn-secondary btn-sm">Contact Sarah</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Trade<span>Core</span></div>
+    <div>© 2026 TradeCore Distribution. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
