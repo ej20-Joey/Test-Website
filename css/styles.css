@@ -150,6 +150,12 @@ ul { list-style: none; }
   color: var(--color-text-muted);
 }
 .btn-ghost:hover { background: var(--color-subtle); color: var(--color-text-primary); }
+.btn-fav {
+  position: absolute; top: var(--space-3); right: var(--space-3); z-index: 1;
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-fav:hover { background: #142d54; }
 .btn-sm { padding: var(--space-2) var(--space-4); font-size: 13px; }
 .btn-lg { padding: var(--space-4) var(--space-8); font-size: 15px; }
 .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
